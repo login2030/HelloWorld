@@ -15,18 +15,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDr-zt-qaB" userLabel="FirstRect">
+                                <rect key="frame" x="16" y="47" width="358" height="370"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjL-ts-AUs" userLabel="SecondRect">
+                                <rect key="frame" x="16" y="440" width="358" height="370"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jDr-zt-qaB" firstAttribute="width" secondItem="yjL-ts-AUs" secondAttribute="width" id="4nf-2P-r1t"/>
+                            <constraint firstItem="jDr-zt-qaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5PQ-tX-xcZ"/>
+                            <constraint firstItem="jDr-zt-qaB" firstAttribute="height" secondItem="yjL-ts-AUs" secondAttribute="height" id="Amg-RQ-YD1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jDr-zt-qaB" secondAttribute="trailing" constant="16" id="FtI-hm-yyK"/>
+                            <constraint firstItem="yjL-ts-AUs" firstAttribute="top" secondItem="jDr-zt-qaB" secondAttribute="bottom" constant="23" id="GEP-AA-RYn"/>
+                            <constraint firstItem="yjL-ts-AUs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="b7z-dJ-jjs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yjL-ts-AUs" secondAttribute="bottom" id="df5-BG-sxi"/>
+                            <constraint firstItem="jDr-zt-qaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gnb-qb-vSF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yjL-ts-AUs" secondAttribute="trailing" constant="16" id="txo-8Q-RZY"/>
+                            <constraint firstItem="jDr-zt-qaB" firstAttribute="width" secondItem="yjL-ts-AUs" secondAttribute="width" id="wBk-Do-LYG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114" y="-7"/>
+            <point key="canvasLocation" x="-176.30331753554501" y="87.692307692307693"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
