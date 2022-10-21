@@ -28,16 +28,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="jDr-zt-qaB" firstAttribute="width" secondItem="yjL-ts-AUs" secondAttribute="width" id="4nf-2P-r1t"/>
-                            <constraint firstItem="jDr-zt-qaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5PQ-tX-xcZ"/>
-                            <constraint firstItem="jDr-zt-qaB" firstAttribute="height" secondItem="yjL-ts-AUs" secondAttribute="height" id="Amg-RQ-YD1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jDr-zt-qaB" secondAttribute="trailing" constant="16" id="FtI-hm-yyK"/>
-                            <constraint firstItem="yjL-ts-AUs" firstAttribute="top" secondItem="jDr-zt-qaB" secondAttribute="bottom" constant="23" id="GEP-AA-RYn"/>
-                            <constraint firstItem="yjL-ts-AUs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="b7z-dJ-jjs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yjL-ts-AUs" secondAttribute="bottom" id="df5-BG-sxi"/>
-                            <constraint firstItem="jDr-zt-qaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gnb-qb-vSF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yjL-ts-AUs" secondAttribute="trailing" constant="16" id="txo-8Q-RZY"/>
-                            <constraint firstItem="jDr-zt-qaB" firstAttribute="width" secondItem="yjL-ts-AUs" secondAttribute="width" id="wBk-Do-LYG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jDr-zt-qaB" secondAttribute="trailing" constant="16" id="16o-MP-6Cg"/>
+                            <constraint firstItem="jDr-zt-qaB" firstAttribute="height" secondItem="yjL-ts-AUs" secondAttribute="height" id="20G-XD-ImR"/>
+                            <constraint firstItem="yjL-ts-AUs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="B3M-Oy-yaA"/>
+                            <constraint firstItem="yjL-ts-AUs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aKQ-1q-3eQ"/>
+                            <constraint firstItem="jDr-zt-qaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="acz-zL-3y5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yjL-ts-AUs" secondAttribute="trailing" constant="16" id="kLq-Dj-203"/>
+                            <constraint firstItem="jDr-zt-qaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nTl-E0-cM6"/>
+                            <constraint firstItem="yjL-ts-AUs" firstAttribute="top" secondItem="jDr-zt-qaB" secondAttribute="bottom" constant="23" id="vxv-bo-Ssj"/>
                         </constraints>
                     </view>
                 </viewController>
