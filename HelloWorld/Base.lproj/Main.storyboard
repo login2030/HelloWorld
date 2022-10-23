@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,46 +13,58 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDr-zt-qaB" userLabel="FirstRect">
-                                <rect key="frame" x="16" y="47" width="358" height="370"/>
-                                <color key="backgroundColor" systemColor="systemMintColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjL-ts-AUs" userLabel="SecondRect">
-                                <rect key="frame" x="16" y="440" width="358" height="370"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет, мир" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UJ5-JR-oHz">
+                                <rect key="frame" x="40" y="189" width="350" height="120.66666666666669"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="101"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr8-zn-Zym">
+                                <rect key="frame" x="73.666666666666686" y="677" width="283" height="41"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="283" id="zqC-xV-Rrs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Показать приверствие">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                    <color key="titleShadowColor" systemColor="systemCyanColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="greetingButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRN-dO-n0a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jDr-zt-qaB" secondAttribute="trailing" constant="16" id="16o-MP-6Cg"/>
-                            <constraint firstItem="jDr-zt-qaB" firstAttribute="height" secondItem="yjL-ts-AUs" secondAttribute="height" id="20G-XD-ImR"/>
-                            <constraint firstItem="yjL-ts-AUs" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="B3M-Oy-yaA"/>
-                            <constraint firstItem="yjL-ts-AUs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aKQ-1q-3eQ"/>
-                            <constraint firstItem="jDr-zt-qaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="acz-zL-3y5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yjL-ts-AUs" secondAttribute="trailing" constant="16" id="kLq-Dj-203"/>
-                            <constraint firstItem="jDr-zt-qaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nTl-E0-cM6"/>
-                            <constraint firstItem="yjL-ts-AUs" firstAttribute="top" secondItem="jDr-zt-qaB" secondAttribute="bottom" constant="23" id="vxv-bo-Ssj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yr8-zn-Zym" secondAttribute="bottom" constant="180" id="42Y-vq-afq"/>
+                            <constraint firstItem="UJ5-JR-oHz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="7sL-6S-Nr5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UJ5-JR-oHz" secondAttribute="trailing" constant="40" id="I7K-qg-AaN"/>
+                            <constraint firstItem="UJ5-JR-oHz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="IVh-SZ-9V0"/>
+                            <constraint firstItem="Yr8-zn-Zym" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YFL-RP-aiM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="Yr8-zn-Zym" id="Lxg-Cy-rjh"/>
+                        <outlet property="greetingLabel" destination="UJ5-JR-oHz" id="4Ww-Lz-bjg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-176.30331753554501" y="87.692307692307693"/>
+            <point key="canvasLocation" x="-744" y="-8"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
